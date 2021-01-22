@@ -13,13 +13,3 @@ You are welcome to visit them:
 + [R Blog](https://michael-fuchs.netlify.app/)
 
 
-
-<p align="center">
-  <img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif?raw=true" alt="data2"/>
-</p>
-
-
-
-
-
-
