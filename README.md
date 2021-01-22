@@ -1,5 +1,8 @@
 # Datasets-and-Miscellaneous
 
+<p align="center">
+  <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif?raw=true" alt="data"/>
+</p>
 
 In this repository I have stored some data sets which I have used in my analyses or for model building. 
 
@@ -10,17 +13,13 @@ You are welcome to visit them:
 + [R Blog](https://michael-fuchs.netlify.app/)
 
 
-<p align="center">
-  <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif?raw=true" alt="data"/>
-</p>
-
 
 <p align="center">
   <img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif?raw=true" alt="data2"/>
 </p>
 
 
-https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif
 
 
-https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif
+
+
