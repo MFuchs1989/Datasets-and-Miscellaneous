@@ -105,6 +105,79 @@ def word_count_func(text):
     return len(text.split())
 
 
+
+from emo_dictonary import EMOTICONS
+
+def emoticons_to_words_func(text):
+    '''
+    Convert Emoticons to Words
+    
+    Args:
+        text (str): String to which the function is to be applied, string
+    
+    Returns:
+        Clean string with converted Emoticons to Words
+    ''' 
+    for emot in EMOTICONS:
+        emoticon_pattern = r'('+emot+')'
+        # replace
+        emoticon_words = EMOTICONS[emot]
+        replace_text = emoticon_words.replace(",","")
+        replace_text = replace_text.replace(":","")
+        replace_text_list = replace_text.split()
+        emoticon_name = '_'.join(replace_text_list)
+        text = re.sub(emoticon_pattern, emoticon_name, text)
+    return text
+
+
+
+def chat_words_to_norm_words_func(text):
+    '''
+    Replaces common chat expressions with their spelled out form
+    
+    Args:
+        text (str): String to which the function is to be applied, string
+    
+    Returns:
+        Clean string with replaced chat expressions
+    ''' 
+    return re.sub(r'\S+', lambda m: chat_expressions_dict.get(m.group().upper(), m.group()) , text)
+
+
+
+def sep_num_words_func(text):
+    '''
+    Separates numbers from words or other characters
+    
+    Args:
+        text (str): String to which the function is to be applied, string
+    
+    Returns:
+        Clean string with separated numbers from words or other characters
+    ''' 
+    return re.sub(r"([0-9]+(\.[0-9]+)?)",r" \1 ", text).strip() 
+
+
+def num_to_words(text):
+    '''
+    Convert Numbers to Words
+    
+    Args:
+        text (str): String to which the function is to be applied, string
+    
+    Returns:
+        Clean string with converted Numbers to Words
+    ''' 
+    after_spliting = text.split()
+
+    for index in range(len(after_spliting)):
+        if after_spliting[index].isdigit():
+            after_spliting[index] = num2words(after_spliting[index])
+    numbers_to_words = ' '.join(after_spliting)
+    return numbers_to_words
+
+
+
 def remove_english_stopwords_func(text):
     '''
     Removes Stop Words (also capitalized) from a string, if present
