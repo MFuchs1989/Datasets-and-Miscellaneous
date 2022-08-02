@@ -1,4 +1,4 @@
-name: environment
+name: environment_old
 channels:
   - anaconda
   - conda-forge
