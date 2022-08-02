@@ -1,0 +1,24 @@
+name: environment_raw
+channels:
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+    - pandas
+    - numpy
+    - scikit-learn
+    - statsmodels
+    - matplotlib
+    - seaborn
+    - xlsxwriter
+    - regex
+    - setuptools
+    - xgboost
+    - scipy
+    - tensorflow
+    - keras
+
+
