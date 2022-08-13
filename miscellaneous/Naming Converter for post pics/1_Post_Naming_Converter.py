@@ -56,7 +56,7 @@ for f in os.listdir(root_dir):
 
 
 for i, filename in enumerate(os.listdir(temp_dir)):
-    os.rename(temp_dir + '/' + filename, target_dir + '/' + post_name + str(i) + ".png")
+    os.rename(temp_dir + '/' + filename, target_dir + '/' + post_name + str(i+1) + ".png")
 
 
 
