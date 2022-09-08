@@ -8,6 +8,19 @@ import shutil
 post_name = 'p137p'
 
 
+root_dir = os.getcwd()
+root_dir = root_dir.replace('\\', '/')
+## Adjust root_dir if necessary 
+## root_dir = root_dir + 'XXX'
+print(root_dir)
+
+temp_dir = root_dir + '/pics_temp'
+print(temp_dir)
+backup_dir = root_dir + '/pics_backup'
+print(backup_dir)
+target_dir = root_dir + '/pics_renamed'
+print(target_dir)
+
 
 
 def createFolder(directory):
@@ -26,17 +39,6 @@ def createFolder(directory):
     except OSError:
         print ('Error: Creating directory. ' +  directory)
 
-
-
-root_dir = os.getcwd()
-root_dir = root_dir.replace('\\', '/')
-print(root_dir)
-temp_dir = root_dir + '/pics_temp'
-print(temp_dir)
-backup_dir = root_dir + '/pics_backup'
-print(backup_dir)
-target_dir = root_dir + '/pics_renamed'
-print(target_dir)
 
 
 createFolder(root_dir + '/pics_temp')
