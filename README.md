@@ -11,5 +11,3 @@ You are welcome to visit them:
 
 + [Python Blog](https://michael-fuchs-python.netlify.app/)
 + [R Blog](https://michael-fuchs.netlify.app/)
-
-
